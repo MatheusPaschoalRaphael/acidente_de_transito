@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-## Importando os arquivos CSV 
+### Importando os arquivos CSV 
 df_arquivo2021 = pd.read_csv("acidentes2021_todas_causas_tipos.csv", sep=';', low_memory=False)
 df_arquivo2022 = pd.read_csv("acidentes2022_todas_causas_tipos.csv", sep=';', low_memory=False)
 df_arquivo2023 = pd.read_csv("acidentes2023_todas_causas_tipos.csv", sep=';', low_memory=False)
