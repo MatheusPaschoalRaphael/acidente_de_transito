@@ -1,0 +1,7 @@
+## Comandos para apoiar
+python --version
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+pip install pandas --only-binary :all:
+pip install seaborn --only-binary :all:
+pip install plotly --only-binary :all: 
+python APP_transito.py

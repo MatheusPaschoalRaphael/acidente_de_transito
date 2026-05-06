@@ -20,13 +20,13 @@ df_arquivo2025 = pd.read_csv("acidentes2025_todas_causas_tipos.csv", sep=';', lo
 df_todos_anos = pd.concat([df_arquivo2021, df_arquivo2022, df_arquivo2023, df_arquivo2024, df_arquivo2025], ignore_index=True)
 
 ## Visualizando as primeiras e ultimas linhas do dataframe concatenado
-print(df_todos_anos.head(100))
-print (df_todos_anos.tail(100))
+#print(df_todos_anos.head(100))
+#print (df_todos_anos.tail(100))
 
 
 ## Analisando a estrutura dos dataframes
-#df_todos_anos['uf'].value_counts().plot(kind='bar', title="Grafico de Barras")
-#plt.show()
+df_todos_anos['uf'].value_counts().plot(kind='bar', title="Grafico de Barras")
+plt.show()
 
-#df_todos_anos['dia_semana'].value_counts().plot(kind='bar', title="Grafico de Barras")
-#plt.show()
+df_todos_anos['dia_semana'].value_counts().plot(kind='bar', title="Grafico de Barras")
+plt.show()
